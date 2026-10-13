@@ -1,1 +1,219 @@
-/* Stage 6: your-order styles. */
+.your-order {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+.order-title {
+  margin-bottom: 20px;
+}
+.order-title span {
+  color: var(--color-blush);
+}
+.order-description {
+  margin-bottom: 40px;
+}
+.order-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.order-form-panel,
+.order-social-panel {
+  min-width: 0;
+  padding: 40px 20px;
+  border-radius: 30px;
+}
+.order-form-panel {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+.order-form-title {
+  margin-bottom: 40px;
+  font-size: var(--font-size-heading-3);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+.order-accent {
+  color: var(--color-chianti);
+}
+.order-green {
+  color: var(--color-green);
+}
+.order-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.order-input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 13px 16px;
+  border: 1px solid var(--color-grey);
+  border-radius: 30px;
+  outline: none;
+  color: var(--color-black);
+  background-color: transparent;
+}
+.order-input::placeholder {
+  color: var(--color-black);
+  opacity: 1;
+}
+.order-input:hover,
+.order-input:focus-visible {
+  border-color: var(--color-chianti);
+}
+.order-input:focus-visible {
+  box-shadow: 0 0 0 1px var(--color-chianti);
+}
+.order-input[aria-invalid='true'] {
+  border-color: var(--color-error);
+}
+.order-input.is-valid {
+  border-color: var(--color-success);
+}
+.order-comment {
+  min-height: 92px;
+  height: 92px;
+  border-radius: 15px;
+  resize: vertical;
+}
+.order-submit {
+  width: 100%;
+  padding: 16px;
+  border: 0;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 20px;
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-chianti);
+}
+.order-submit:hover:not(:disabled) {
+  color: var(--color-chianti);
+  background-color: var(--color-blush);
+}
+.order-submit:disabled {
+  opacity: 0.5;
+}
+.order-error {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--color-chianti);
+}
+.order-status {
+  margin-top: 16px;
+}
+.order-social-panel {
+  background-color: var(--color-chianti);
+}
+.order-picture {
+  display: block;
+  margin-bottom: 20px;
+}
+.order-picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.order-social-caption {
+  margin-bottom: 16px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-blush);
+}
+.order-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+.order-social-links li {
+  display: flex;
+  gap: 8px;
+}
+.order-social-links li:not(:last-child)::after {
+  content: '/';
+}
+.order-social-links a:hover,
+.order-social-links a:focus-visible {
+  color: var(--color-blush);
+}
+@media (min-width: 768px) {
+  .order-title,
+  .order-description {
+    max-width: 640px;
+  }
+  .order-title {
+    margin-bottom: 24px;
+  }
+  .order-description {
+    margin-bottom: 52px;
+  }
+  .order-panels {
+    max-width: 640px;
+    margin-inline: auto;
+    gap: 32px;
+  }
+  .order-form-panel {
+    padding: 72px 100px;
+  }
+  .order-form-title {
+    margin-bottom: 52px;
+  }
+  .order-fields {
+    margin-bottom: 24px;
+  }
+  .order-input {
+    height: 52px;
+    padding-block: 15px;
+  }
+  .order-comment {
+    height: 96px;
+    min-height: 96px;
+  }
+  .order-social-panel {
+    padding: 52px;
+  }
+  .order-picture {
+    margin-bottom: 52px;
+  }
+  .order-social-links,
+  .order-social-links li {
+    gap: 12px;
+  }
+}
+@media (min-width: 1440px) {
+  .order-title {
+    max-width: 751px;
+  }
+  .order-description {
+    max-width: 742px;
+  }
+  .order-panels {
+    max-width: none;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .order-form-panel,
+  .order-social-panel {
+    width: calc((100% - 32px) / 2);
+    padding: 52px 48px;
+  }
+  .order-social-panel {
+    display: flex;
+    flex-direction: column;
+  }
+  .order-picture {
+    margin-bottom: 80px;
+  }
+  .order-socials {
+    margin-top: auto;
+  }
+}

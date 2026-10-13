@@ -1,1 +1,149 @@
-<div id="your-order"><!-- Stage 6: your-order. --></div>
+<section
+  class="your-order section"
+  id="your-order"
+  aria-labelledby="order-title"
+>
+  <div class="container">
+    <h2 class="section-title order-title" id="order-title">
+      Fresh <span>Harvest</span> Box has got you covered
+    </h2>
+    <p class="order-description">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="order-panels">
+      <div class="order-form-panel">
+        <h3 class="order-form-title" id="order-form-title">
+          Ordering <span class="order-accent">from us</span> is quick and easy!
+          Fill out <span class="order-green">the form</span> below and we will
+          contact you !
+        </h3>
+        <form
+          class="order-form"
+          aria-labelledby="order-form-title"
+          data-order-form
+        >
+          <div class="order-fields">
+            <div class="order-field">
+              <label class="visually-hidden" for="order-name">Full Name</label>
+              <input
+                class="order-input"
+                id="order-name"
+                name="fullName"
+                type="text"
+                autocomplete="name"
+                placeholder="Full Name"
+                required
+                minlength="2"
+                maxlength="100"
+                aria-describedby="order-name-error"
+              />
+              <p class="order-error" id="order-name-error" hidden></p>
+            </div>
+            <div class="order-field">
+              <label class="visually-hidden" for="order-email">Email</label>
+              <input
+                class="order-input"
+                id="order-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="Email"
+                required
+                maxlength="254"
+                aria-describedby="order-email-error"
+              />
+              <p class="order-error" id="order-email-error" hidden></p>
+            </div>
+            <div class="order-field">
+              <label class="visually-hidden" for="order-comment">Comment</label>
+              <textarea
+                class="order-input order-comment"
+                id="order-comment"
+                name="comment"
+                placeholder="Comment"
+                rows="3"
+                maxlength="2000"
+                aria-describedby="order-comment-error"
+              ></textarea>
+              <p class="order-error" id="order-comment-error" hidden></p>
+            </div>
+          </div>
+          <button class="order-submit" type="submit" disabled>Send</button>
+          <p
+            class="order-status"
+            role="status"
+            aria-live="polite"
+            data-order-status
+            hidden
+          ></p>
+          <noscript><p>Enable JavaScript to validate this form.</p></noscript>
+        </form>
+      </div>
+      <div class="order-social-panel">
+        <picture class="order-picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ./img/your-order/desktop.jpg    1x,
+              ./img/your-order/desktop-2x.jpg 2x
+            "
+            width="428"
+            height="352"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/your-order/tablet.jpg    1x,
+              ./img/your-order/tablet-2x.jpg 2x
+            "
+            width="536"
+            height="316"
+          />
+          <img
+            src="./img/your-order/mobile.jpg"
+            srcset="
+              ./img/your-order/mobile.jpg    1x,
+              ./img/your-order/mobile-2x.jpg 2x
+            "
+            width="295"
+            height="272"
+            alt="Preparing a fresh drink with fruit in the kitchen"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+        <div class="order-socials">
+          <p class="order-social-caption">Follow us on our social networks:</p>
+          <ul class="order-social-links" aria-label="Social networks">
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
