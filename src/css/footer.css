@@ -1,1 +1,118 @@
-/* Stage 7: footer styles. */
+.footer {
+  padding-block: 40px;
+  color: var(--color-white);
+  background-color: var(--color-chianti);
+}
+
+.footer-main,
+.footer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-brand .logo {
+  margin-bottom: 14px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 32px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 32px;
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+}
+
+.footer-address {
+  max-width: 179px;
+}
+
+.footer a:hover,
+.footer a:focus-visible {
+  color: var(--color-blush);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 80px;
+  color: var(--color-blush);
+}
+
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-block: 32px;
+  }
+  .footer-main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-brand {
+    width: 265px;
+  }
+  .footer-brand .logo {
+    margin-bottom: 24px;
+  }
+  .footer-details {
+    gap: 64px;
+  }
+  .footer-nav-list,
+  .footer-contacts {
+    gap: 24px;
+  }
+  .footer-address {
+    max-width: 215px;
+  }
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    padding-block: 52px;
+  }
+  .footer-details {
+    flex-direction: row;
+    gap: 121px;
+  }
+  .footer-nav-list {
+    width: 228px;
+  }
+  .footer-contacts {
+    width: 216px;
+  }
+  .footer-bottom {
+    margin-top: 124px;
+  }
+  .footer-legal {
+    gap: 12px;
+  }
+}
