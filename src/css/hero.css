@@ -1,1 +1,65 @@
-/* Stage 2: hero styles. */
+.hero {
+  position: relative;
+  padding-top: 100px;
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+.hero-copy {
+  padding-bottom: 40px;
+}
+.hero-title {
+  margin-bottom: 20px;
+  font-size: clamp(44px, 13.867vw, 52px);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+.hero-picture {
+  display: block;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 120px;
+  }
+  .hero-copy {
+    padding-bottom: 52px;
+  }
+  .hero-title {
+    margin-bottom: 24px;
+    font-size: var(--font-size-heading-1);
+  }
+  .hero-description {
+    max-width: 603px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    padding-top: 232px;
+    min-height: 796px;
+  }
+  .hero-copy {
+    width: 504px;
+    padding-bottom: 52px;
+  }
+  .hero-title {
+    width: 502px;
+    margin-bottom: 128px;
+  }
+  .hero-description {
+    max-width: 472px;
+  }
+  .hero-picture {
+    position: absolute;
+    inset: 0 0 0 50%;
+  }
+  .hero-image {
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+  }
+}

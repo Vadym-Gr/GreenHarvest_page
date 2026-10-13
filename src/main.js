@@ -1,1 +1,3 @@
-// Section interactions will be added in the corresponding implementation stages.
+import { initMobileMenu } from './js/mobile-menu.js';
+
+initMobileMenu();

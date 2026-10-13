@@ -1,1 +1,119 @@
-/* Stage 2: header styles. */
+.header {
+  position: absolute;
+  inset: 20px 0 auto;
+  z-index: 2;
+  color: var(--color-white);
+}
+.header-container,
+.header-actions,
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  justify-content: space-between;
+}
+.logo {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+.logo-mobile,
+.logo-large {
+  align-items: center;
+}
+.logo-mobile {
+  display: flex;
+  gap: 4px;
+}
+.logo-large {
+  display: none;
+  gap: 8.889px;
+}
+.header-actions {
+  display: none;
+  gap: 20px;
+}
+.header-nav-list {
+  gap: 8px;
+}
+.nav-link {
+  display: block;
+  padding: 11px 12px;
+  border: 1px solid var(--color-white);
+  border-radius: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+.nav-link:hover {
+  color: var(--color-chianti);
+  background-color: var(--color-blush);
+  border-color: var(--color-blush);
+}
+.nav-link:focus-visible,
+.nav-link:active {
+  color: var(--color-chianti);
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+}
+.shop-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 20px;
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-chianti);
+}
+.shop-link:hover {
+  color: var(--color-chianti);
+  background-color: var(--color-blush);
+}
+.shop-link:focus-visible,
+.shop-link:active {
+  color: var(--color-chianti);
+  background-color: var(--color-white);
+}
+.menu-toggle,
+.menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: var(--color-white);
+}
+.menu-toggle:hover,
+.menu-close:hover {
+  background-color: rgb(251 251 251 / 15%);
+}
+.icon-tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header {
+    top: 32px;
+  }
+  .logo-mobile,
+  .icon-mobile {
+    display: none;
+  }
+  .logo-large {
+    display: flex;
+  }
+  .icon-tablet {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .header-actions {
+    display: flex;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}

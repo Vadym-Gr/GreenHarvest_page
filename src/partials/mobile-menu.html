@@ -1,1 +1,48 @@
-<!-- Stage 2: mobile-menu. -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+  <div
+    class="mobile-menu-panel"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="mobile-menu-title"
+    tabindex="-1"
+  >
+    <h2 class="visually-hidden" id="mobile-menu-title">Site navigation</h2>
+    <button
+      class="menu-close"
+      type="button"
+      aria-label="Close navigation menu"
+      data-menu-close
+    >
+      <img
+        class="icon-mobile"
+        src="./img/icons/close-mobile.svg"
+        width="32"
+        height="32"
+        alt=""
+      />
+      <img
+        class="icon-tablet"
+        src="./img/icons/close-tablet.svg"
+        width="40"
+        height="40"
+        alt=""
+      />
+    </button>
+    <nav class="mobile-menu-nav" aria-label="Mobile navigation">
+      <ul class="mobile-menu-list">
+        <li>
+          <a class="nav-link mobile-menu-link" href="#how-it-works"
+            >How It Works</a
+          >
+        </li>
+        <li>
+          <a class="nav-link mobile-menu-link" href="#vegetables">Vegetables</a>
+        </li>
+        <li>
+          <a class="nav-link mobile-menu-link" href="#reviews">Reviews</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="shop-link mobile-menu-shop" href="#your-order">Shop now</a>
+  </div>
+</div>
