@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/GreenHarvest_page/",
-    "preview": "vite preview",
+    "preview": "vite preview --base=/GreenHarvest_page/",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

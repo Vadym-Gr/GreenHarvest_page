@@ -15,8 +15,8 @@
     padding-inline: 32px;
   }
 }
-/* The brief specifies a 1440px desktop breakpoint; Figma content is 1080px wide. */
-@media (min-width: 1440px) {
+/* Desktop starts at 1280px to match Figma; the content area is 1080px wide. */
+@media (min-width: 1280px) {
   .container {
     max-width: 1280px;
     padding-inline: 100px;

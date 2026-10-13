@@ -8,7 +8,7 @@ export function initMobileMenu() {
   const background = [...document.body.children].filter(
     (element) => element !== menu && element.tagName !== 'SCRIPT'
   );
-  const desktop = window.matchMedia('(min-width: 1440px)');
+  const desktop = window.matchMedia('(min-width: 1280px)');
   let previousFocus;
   let inertState = [];
 

@@ -83,7 +83,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .vegetable-card {
     width: calc((100% - 48px) / 3);
     padding-inline: 32px;

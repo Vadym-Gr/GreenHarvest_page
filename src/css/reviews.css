@@ -104,7 +104,7 @@
 .review-quote {
   max-width: 288px;
   margin: 0 auto;
-  color: var(--color-grey);
+  color: var(--color-text-muted);
 }
 
 @media (min-width: 768px) {
@@ -133,7 +133,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .review-card {
     width: calc((100% - 48px) / 3);
   }

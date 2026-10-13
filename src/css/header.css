@@ -109,7 +109,7 @@
     display: block;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .header-actions {
     display: flex;
   }

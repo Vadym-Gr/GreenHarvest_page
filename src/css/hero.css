@@ -37,7 +37,7 @@
     max-width: 603px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .hero {
     padding-top: 232px;
     min-height: 796px;

@@ -37,7 +37,7 @@
     inset: -20px -12px -2px 0;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .advertisement-text {
     min-height: 228px;
     padding: 0 10px 0 16px;
