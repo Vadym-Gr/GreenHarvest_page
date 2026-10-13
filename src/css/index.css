@@ -1,0 +1,20 @@
+@import 'modern-normalize/modern-normalize.css';
+@import '@fontsource/inter-tight/latin-500.css';
+@import '@fontsource/inter-tight/latin-600.css';
+@import '@fontsource/inter-tight/latin-700.css';
+
+@import './tokens.css';
+@import './reset.css';
+@import './base.css';
+@import './container.css';
+@import './utilities.css';
+
+@import './header.css';
+@import './hero.css';
+@import './mobile-menu.css';
+@import './how-it-works.css';
+@import './advertisement.css';
+@import './vegetables.css';
+@import './reviews.css';
+@import './your-order.css';
+@import './footer.css';

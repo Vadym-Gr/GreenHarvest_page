@@ -1,0 +1,38 @@
+:root {
+  --color-black: #141414;
+  --color-white: #fbfbfb;
+  --color-chianti: #7a3145;
+  --color-blush: #d4bfc4;
+  --color-green: #576f35;
+  --color-grey: #858585;
+  --color-overlay: rgb(20 20 20 / 20%);
+  --color-success: #3cbc81;
+  --color-error: #e74a3b;
+
+  --font-family: 'Inter Tight', Arial, sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-body: 14px;
+  --font-size-heading-1: 48px;
+  --font-size-heading-2: 48px;
+  --font-size-heading-3: 28px;
+  --line-height-body: 20px;
+  --line-height-heading-2: 52px;
+  --letter-spacing-heading: -0.015em;
+
+  --section-padding: 80px;
+  --transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-size-body: 16px;
+    --font-size-heading-1: 76px;
+    --font-size-heading-2: 64px;
+    --font-size-heading-3: 32px;
+    --line-height-heading-2: 64px;
+    --section-padding: 100px;
+  }
+}

@@ -1,19 +1,24 @@
-/* Styles for Mobile devices */
+/* Fluid at 320?374px; fixed maximums include horizontal padding. */
 .container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 20px;
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
+@media (min-width: 375px) {
   .container {
-    max-width: 768px;
+    max-width: 375px;
   }
 }
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 768px) {
   .container {
-    max-width: 1200px;
+    max-width: 768px;
+    padding-inline: 32px;
+  }
+}
+/* The brief specifies a 1440px desktop breakpoint; Figma content is 1080px wide. */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+    padding-inline: 100px;
   }
 }
