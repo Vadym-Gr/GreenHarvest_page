@@ -1,1 +1,126 @@
-<div id="reviews"><!-- Stage 5: reviews. --></div>
+<section class="reviews section" id="reviews" aria-labelledby="reviews-title">
+  <div class="container">
+    <h2 class="section-title reviews-title" id="reviews-title">
+      Reviews from our <span>customers</span>
+    </h2>
+    <p class="reviews-description">
+      Words of our customers: impressions and opinions about the quality of our
+      services and the freshness of our products.
+    </p>
+    <div class="reviews-carousel">
+      <button
+        class="reviews-button"
+        type="button"
+        aria-label="Previous reviews"
+        aria-controls="reviews-list"
+        data-reviews-prev
+        disabled
+      >
+        <span class="reviews-chevron" aria-hidden="true"></span>
+      </button>
+      <ul
+        class="reviews-list"
+        id="reviews-list"
+        role="list"
+        tabindex="0"
+        aria-label="Customer reviews"
+      >
+        <li class="review-card">
+          <picture class="review-avatar">
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/reviews/john-wax.jpg    1x,
+                ./img/reviews/john-wax-2x.jpg 2x
+              "
+            />
+            <img
+              src="./img/reviews/john-wax-mobile.jpg"
+              srcset="
+                ./img/reviews/john-wax-mobile.jpg    1x,
+                ./img/reviews/john-wax-mobile-2x.jpg 2x
+              "
+              width="56"
+              height="56"
+              alt="John Wax"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <h3 class="review-name">John Wax</h3>
+          <blockquote class="review-quote">
+            <p>
+              These vegetables are my secret to delicious and healthy meals. The
+              quality is always at the highest level, the aroma and taste are
+              enchanting. I advise every fan of real products!
+            </p>
+          </blockquote>
+        </li>
+        <li class="review-card">
+          <img
+            class="review-avatar"
+            src="./img/reviews/victoria-romashenko.jpg"
+            srcset="
+              ./img/reviews/victoria-romashenko.jpg    1x,
+              ./img/reviews/victoria-romashenko-2x.jpg 2x
+            "
+            width="56"
+            height="56"
+            alt="Victoria Romashenko"
+            loading="lazy"
+            decoding="async"
+          />
+          <h3 class="review-name">Victoria Romashenko</h3>
+          <blockquote class="review-quote">
+            <p>
+              I love how fast and fresh the vegetables are delivered. Salads
+              always turn out so appetizing, and soups are real masterpieces.
+              The quality is impeccable!
+            </p>
+          </blockquote>
+        </li>
+        <li class="review-card">
+          <img
+            class="review-avatar"
+            src="./img/reviews/ihor-trachuk.jpg"
+            srcset="
+              ./img/reviews/ihor-trachuk.jpg    1x,
+              ./img/reviews/ihor-trachuk-2x.jpg 2x
+            "
+            width="56"
+            height="56"
+            alt="Ihor Trachuk"
+            loading="lazy"
+            decoding="async"
+          />
+          <h3 class="review-name">Ihor Trachuk</h3>
+          <blockquote class="review-quote">
+            <p>
+              Recently tried my fresh tomatoes and peppers - amazing! The
+              authenticity of the taste, as if from the garden directly to my
+              table. It is now my main vegetable supplier.
+            </p>
+          </blockquote>
+        </li>
+      </ul>
+      <button
+        class="reviews-button"
+        type="button"
+        aria-label="Next reviews"
+        aria-controls="reviews-list"
+        data-reviews-next
+        disabled
+      >
+        <span class="reviews-chevron" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <p
+      class="visually-hidden"
+      data-reviews-status
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></p>
+  </div>
+</section>

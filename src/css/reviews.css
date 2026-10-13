@@ -1,1 +1,140 @@
-/* Stage 5: reviews styles. */
+.reviews {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.reviews-title {
+  margin-bottom: 20px;
+  font-size: clamp(40px, 12.8vw, 48px);
+}
+
+.reviews-title span {
+  color: var(--color-green);
+}
+
+.reviews-description {
+  margin-bottom: 40px;
+}
+
+.reviews-list {
+  min-width: 0;
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.reviews-list::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  min-width: 0;
+  min-height: 228px;
+  padding: 19px 15px;
+  border: 1px solid var(--color-blush);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.reviews-carousel {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 8px;
+}
+.reviews-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 48px;
+  border: 0;
+  border-radius: 8px;
+  color: var(--color-chianti);
+  background-color: var(--color-white);
+  font-size: 28px;
+  line-height: 1;
+}
+.reviews-chevron {
+  width: 14px;
+  height: 14px;
+  border-top: 3px solid currentColor;
+  border-right: 3px solid currentColor;
+  transform: rotate(45deg);
+  margin-right: 5px;
+}
+[data-reviews-prev] .reviews-chevron {
+  transform: rotate(-135deg);
+  margin-right: 0;
+  margin-left: 5px;
+}
+.reviews-button:disabled {
+  color: var(--color-grey);
+  border-color: var(--color-blush);
+  opacity: 0.45;
+}
+
+.review-avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-avatar img {
+  border-radius: inherit;
+}
+
+.review-name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 20px;
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+.review-quote {
+  max-width: 288px;
+  margin: 0 auto;
+  color: var(--color-grey);
+}
+
+@media (min-width: 768px) {
+  .reviews-carousel {
+    grid-template-columns: 40px minmax(0, 1fr) 40px;
+    gap: 12px;
+  }
+  .reviews-button {
+    width: 40px;
+  }
+  .reviews-title {
+    max-width: 553px;
+    margin-bottom: 24px;
+    font-size: var(--font-size-heading-2);
+  }
+
+  .reviews-description {
+    max-width: 553px;
+    margin-bottom: 52px;
+  }
+
+  .review-card {
+    width: calc((100% - 24px) / 2);
+    min-height: 248px;
+    padding: 19px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .review-card {
+    width: calc((100% - 48px) / 3);
+  }
+}
