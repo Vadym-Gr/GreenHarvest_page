@@ -1,1 +1,134 @@
-/* Stage 3: how-it-works styles. */
+.how-it-works {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+.how-visual {
+  padding: 40px 20px;
+  background-color: var(--color-chianti);
+}
+.how-picture {
+  display: block;
+  max-width: 335px;
+  margin-inline: auto;
+}
+.how-image {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+.how-instructions {
+  padding: 80px 20px;
+}
+.how-content {
+  max-width: 335px;
+  margin-inline: auto;
+}
+.how-title {
+  margin-bottom: 20px;
+  font-size: var(--font-size-heading-3);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+.how-title span {
+  color: var(--color-blush);
+}
+.how-description {
+  margin-bottom: 40px;
+}
+.how-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.how-step {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 76px;
+  padding: 12px 24px;
+  border-radius: 15px;
+  color: var(--color-grey);
+  background-color: var(--color-white);
+}
+.how-step p {
+  min-width: 0;
+}
+.how-step:nth-child(2) p {
+  max-width: 176px;
+}
+.how-step strong {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+}
+.how-number {
+  position: relative;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-heading);
+}
+.how-number span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .how-visual {
+    padding: 100px 64px;
+  }
+  .how-picture {
+    max-width: 640px;
+  }
+  .how-instructions {
+    padding: 100px 32px;
+  }
+  .how-content {
+    max-width: 440px;
+  }
+  .how-title {
+    margin-bottom: 24px;
+  }
+  .how-description {
+    margin-bottom: 52px;
+  }
+  .how-steps {
+    gap: 24px;
+  }
+  .how-step:nth-child(2) p {
+    max-width: none;
+  }
+  .how-step p {
+    letter-spacing: -0.02em;
+  }
+}
+@media (min-width: 1440px) {
+  .how-it-works {
+    display: flex;
+  }
+  .how-visual,
+  .how-instructions {
+    width: 50%;
+    padding: 100px;
+  }
+  .how-visual {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .how-picture {
+    width: 440px;
+    margin: 0;
+  }
+  .how-content {
+    margin: 0;
+  }
+  .how-description {
+    margin-bottom: 104px;
+  }
+}

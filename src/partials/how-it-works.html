@@ -1,1 +1,91 @@
-<div id="how-it-works"><!-- Stage 3: how-it-works. --></div>
+<section class="how-it-works" id="how-it-works" aria-labelledby="how-title">
+  <div class="how-visual">
+    <picture class="how-picture">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ./img/how-it-works/desktop.jpg    1x,
+          ./img/how-it-works/desktop-2x.jpg 2x
+        "
+        width="440"
+        height="560"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/how-it-works/tablet.jpg    1x,
+          ./img/how-it-works/tablet-2x.jpg 2x
+        "
+        width="640"
+        height="640"
+      />
+      <img
+        class="how-image"
+        src="./img/how-it-works/mobile.jpg"
+        srcset="
+          ./img/how-it-works/mobile.jpg    1x,
+          ./img/how-it-works/mobile-2x.jpg 2x
+        "
+        width="335"
+        height="452"
+        alt="A woman preparing fresh produce in her kitchen"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+  </div>
+  <div class="how-instructions">
+    <div class="how-content">
+      <h2 class="how-title" id="how-title">
+        To order your <span>vegetable</span> basket, simply follow these
+        <span>easy steps</span>
+      </h2>
+      <p class="how-description">
+        Our baskets are assembled with care and delivered straight to your
+        doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+        your home.
+      </p>
+      <ol class="how-steps" role="list">
+        <li class="how-step">
+          <span class="how-number" aria-hidden="true"
+            ><img
+              src="./img/icons/step-circle.svg"
+              width="52"
+              height="52"
+              alt=""
+            /><span>1</span></span
+          >
+          <p>
+            Just choose <strong>the vegetable</strong> you want to order by
+            clicking on the checkboxes <strong>next to it</strong>.
+          </p>
+        </li>
+        <li class="how-step">
+          <span class="how-number" aria-hidden="true"
+            ><img
+              src="./img/icons/step-circle.svg"
+              width="52"
+              height="52"
+              alt=""
+            /><span>2</span></span
+          >
+          <p>Click on <strong>the basket</strong> and fill out the form.</p>
+        </li>
+        <li class="how-step">
+          <span class="how-number" aria-hidden="true"
+            ><img
+              src="./img/icons/step-circle.svg"
+              width="52"
+              height="52"
+              alt=""
+            /><span>3</span></span
+          >
+          <p>
+            Sit back and relax! Your <strong>fresh vegetables</strong> basket
+            will be delivered.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
