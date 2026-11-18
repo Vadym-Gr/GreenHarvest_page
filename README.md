@@ -126,7 +126,7 @@ imagegen у фотографічному стилі №1 та №2. Картку
 ## Відомі технічні зауваження
 
 У секції NIEUW PRODUCT кнопка DOWNLOAD завантажує презентацію
-під назвою `GREEN.HARVEST_Kombucha.pptx`. Файл зберігається в
+під назвою `GREEN.HARVEST_Kombucha_2026.pptx`. Файл зберігається в
 `src/public/presentations/green-harvest-kombucha.pptx` і копіюється в збірку.
 Адреса презентації визначається відносно поточної сторінки,
 зокрема враховує шлях `/GreenHarvest_page/` після публікації.
