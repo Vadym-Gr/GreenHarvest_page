@@ -1,0 +1,154 @@
+.nieuw-product {
+  overflow: hidden;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.product-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.product-eyebrow {
+  display: inline-block;
+  margin-bottom: 28px;
+  padding: 10px 16px;
+  border: 1px solid var(--color-green);
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  color: var(--color-green);
+}
+
+.product-intro {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.product-title {
+  margin-bottom: 24px;
+  font-size: clamp(48px, 15vw, 64px);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--color-chianti);
+}
+
+.product-description {
+  max-width: 380px;
+  font-size: 22px;
+  line-height: 30px;
+  color: var(--color-green);
+}
+
+.product-rule {
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: 28px;
+  border-radius: 4px;
+  background-color: var(--color-blush);
+}
+
+.product-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 28px;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 20px;
+  letter-spacing: var(--letter-spacing-heading);
+  color: var(--color-white);
+  background-color: var(--color-chianti);
+}
+
+.product-download:hover,
+.product-download:focus-visible {
+  background-color: var(--color-green);
+}
+
+.product-visuals {
+  position: relative;
+  padding: 0 0 36px 60px;
+}
+
+.product-bottle {
+  width: 100%;
+  height: auto;
+  border-radius: 160px 160px 30px 30px;
+}
+
+.product-glass {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  height: auto;
+  border: 6px solid var(--color-white);
+  border-radius: 24px;
+  box-shadow: 0 12px 24px rgb(20 20 20 / 12%);
+  transform: rotate(-6deg);
+}
+
+@media (min-width: 768px) {
+  .product-layout {
+    gap: 52px;
+  }
+
+  .product-title {
+    font-size: 100px;
+  }
+
+  .product-description {
+    max-width: 480px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .product-visuals {
+    width: 560px;
+    max-width: 100%;
+    margin-inline: auto;
+    padding: 0 0 52px 96px;
+  }
+
+  .product-glass {
+    border-width: 8px;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .product-layout {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .product-copy {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .product-visuals {
+    flex: 0 0 520px;
+    margin: 0;
+    padding-left: 80px;
+  }
+
+  .product-intro {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .product-title {
+    font-size: 104px;
+  }
+}

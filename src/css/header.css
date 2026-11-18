@@ -1,8 +1,11 @@
 .header {
-  position: absolute;
-  inset: 20px 0 auto;
-  z-index: 2;
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 5;
+  padding-block: 20px;
   color: var(--color-white);
+  background-color: var(--color-green);
+  box-shadow: 0 2px 12px rgb(20 20 20 / 12%);
 }
 .header-container,
 .header-actions,
@@ -96,7 +99,7 @@
 }
 @media (min-width: 768px) {
   .header {
-    top: 32px;
+    padding-block: 24px;
   }
   .logo-mobile,
   .icon-mobile {
@@ -110,6 +113,9 @@
   }
 }
 @media (min-width: 1280px) {
+  .header {
+    padding-block: 16px;
+  }
   .header-actions {
     display: flex;
   }

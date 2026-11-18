@@ -1,0 +1,131 @@
+.our-team {
+  color: var(--color-black);
+  background-color: var(--color-blush);
+}
+
+.team-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.team-title span {
+  color: var(--color-chianti);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.team-card {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 30px;
+  background-color: var(--color-white);
+}
+
+.team-photo {
+  position: relative;
+}
+
+.team-photo img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.team-photo-label {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 12px;
+  border-radius: 30px;
+  color: var(--color-green);
+  background-color: var(--color-white);
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.team-card-content {
+  padding: 24px;
+  text-align: center;
+}
+
+.team-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 24px;
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+  color: var(--color-chianti);
+  overflow-wrap: anywhere;
+}
+
+.team-position {
+  margin-bottom: 20px;
+  color: var(--color-text-muted);
+}
+
+.team-link {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-green);
+  border-radius: 50%;
+  color: var(--color-green);
+  background-color: transparent;
+  font-size: 22px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  transition:
+    color var(--transition-duration) var(--transition-timing),
+    background-color var(--transition-duration) var(--transition-timing),
+    border-color var(--transition-duration) var(--transition-timing);
+}
+
+.team-link[aria-disabled='true'] {
+  color: var(--color-text-muted);
+  border-color: var(--color-blush);
+  cursor: default;
+}
+
+.team-link:hover,
+.team-link:focus-visible {
+  color: var(--color-white);
+  border-color: var(--color-green);
+  background-color: var(--color-green);
+}
+
+.team-link:focus-visible {
+  outline: 2px solid var(--color-chianti);
+  outline-offset: 4px;
+}
+
+.team-product-link,
+.team-github-link {
+  margin-left: 8px;
+}
+
+@media (min-width: 768px) {
+  .team-title {
+    margin-bottom: 52px;
+  }
+
+  .team-card {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 1280px) {
+  .team-card {
+    width: calc((100% - 72px) / 4);
+  }
+}

@@ -23,6 +23,7 @@
   --letter-spacing-heading: -0.015em;
 
   --section-padding: 80px;
+  --header-height: 72px;
   --transition-duration: 250ms;
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -35,5 +36,12 @@
     --font-size-heading-3: 32px;
     --line-height-heading-2: 64px;
     --section-padding: 100px;
+    --header-height: 88px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --header-height: 84px;
   }
 }
