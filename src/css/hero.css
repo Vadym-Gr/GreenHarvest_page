@@ -17,12 +17,17 @@
 }
 .hero-picture {
   display: block;
+  max-width: 375px;
+  margin-inline: auto;
 }
 .hero-image {
   width: 100%;
   height: auto;
 }
 @media (min-width: 768px) {
+  .hero-picture {
+    max-width: 768px;
+  }
   .hero {
     padding-top: 120px;
   }
@@ -55,7 +60,10 @@
   }
   .hero-picture {
     position: absolute;
-    inset: 0 0 0 50%;
+    top: 0;
+    left: 50%;
+    width: 640px;
+    height: 796px;
   }
   .hero-image {
     height: 100%;
